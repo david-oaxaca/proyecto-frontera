@@ -19,9 +19,10 @@ export default function Header() {
     }, []);
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-color">
+        <nav className="navbar sticky-top navbar-expand-lg navbar-dark custom-bg-color">
             <div className="container-fluid">
-                <a className="navbar-brand"  href="/">
+                <a className="navbar-brand font-brand"  href="/">
+                    
                     <img src={IPN} alt="IPN" className='filter-white' width='35px' height='35px'/>
                     Proyecto Frontera
                 </a>
