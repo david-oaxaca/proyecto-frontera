@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './Assets/Styles/index.css';
 import App from './Routes/App';
-import "../src/Assets/Styles/style.scss";
+import '../src/Assets/Styles/style.scss';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

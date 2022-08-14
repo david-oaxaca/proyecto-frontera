@@ -13,6 +13,7 @@ main {
     .slider{
         white-space: nowrap;
         transition: ease 1000ms;
+        color: white;
         
         .slide{
             display: inline-block;
@@ -21,7 +22,7 @@ main {
             width: 100%;
 
             .slide-content {
-                width: 50%;
+                width: 70%;
                 padding: 80px;
                 
                 p{
@@ -52,12 +53,41 @@ main {
 
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 4fr 3fr;
+    background-color: var(--secondary-color);
     gap: 10px;
+
+    h1, h2 {
+        color: var(--primary-color);
+    }
+
+    h3, h4 {
+        color: var(--secondary-color);
+    }
+
+    h5 {
+        color: var(--terciary-color);
+    }
+
+    .info-cell {
+        height: 32rem;
+        padding: 6%;
+        text-align: center;
+
+        h1, p {
+            color: white;
+        }
+    }
 
     .rating-cell {
         height: 32rem;
-        padding: 10px;
+        padding: 8%;
         text-align: center;
+        background-color: var(--white);
+        border-radius: 0 0 0 100%;
+    }
+
+    .rating-btn {
+        padding: 20px;
     }
 }

@@ -1,19 +1,19 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const slides = [{
-                    "color": "#ADCF9F", 
+                    "color": "#36AE7C", 
                     "title": "Nuestro proyecto", 
                     "text": "El turismo es una actividad económica de gran relevancia en México. Las áreas naturales protegidas son áreas resguardadas para la conservación de su biodiversidad, en las que recientemente se ha buscado implementar estrategias que permitan aprovecharalas turísticamentede una forma sustentable..."
                 }, 
                 {
-                    "color": "#CED89E", 
+                    "color": "#F9D923", 
                     "title": "Lenguaje natural", 
                     "text": "El procesamiento de lenguaje natural es el campo dentro de las ciencias de la computación que conjunta técnicas de inteligencia artificial con linguística y que, entre otras aplicaciones, permite analizar textos de forma automática"
                 }, 
                 {
-                    "color": "#FFDCAE", 
-                    "title": "Titulo #3", 
-                    "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem incidunt recusandae doloremque, praesentium error, eaque corporis expedita soluta est tenetur vitae nisi reiciendis saepe tempore magnam, culpa numquam velit nesciunt."
+                    "color": "#EB5353", 
+                    "title": "CIC - IPN", 
+                    "text": "El laboratorio de Procesamiento Inteligente de Información Geospacial fue el encargado de la elaboración de este proyecto en el plazo de Agosto 2022 a Diciembre 2022."
                 }]
             
 const delay = 3500;
