@@ -20,7 +20,7 @@ export default function Header() {
 
     return (
         <header className='sticky-top'>
-            <nav className="navbar navbar-expand-lg navbar-dark custom-bg-color ">
+            <nav className="navbar navbar-expand-lg navbar-dark custom-bg-color nav-shadow">
                 <div className="container-fluid">
                     <a className="navbar-brand font-brand"  href="/">
                         

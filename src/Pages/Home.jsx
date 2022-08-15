@@ -19,7 +19,7 @@ export default function Home() {
               </p>
               <CardDisplay/>
             </div>
-            <div className='rating-cell'>
+            <div className='rating-cell container-shadow'>
               <h2>¡Deja una evaluación!</h2>
               <h5>¿Comó ha sido tu experiencia en la pagina?</h5>
               <Rating/>
