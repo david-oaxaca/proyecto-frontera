@@ -1,5 +1,6 @@
 @import './style.scss';
 
+
 .custom-bg-color {
     background-color: var(--primary-color);
 }
@@ -15,5 +16,9 @@
 
 .font-brand{
     font-family: 'Poppins', sans-serif;
+}
+
+.navbar .navbar-nav .nav-item {
+    font-size: 20px;
 }
 

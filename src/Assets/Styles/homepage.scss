@@ -11,7 +11,7 @@ main {
 }
 
 .slideshow {
-    height: calc(100vh - 54px);
+    height: calc(100vh - 70px);
     margin: 0 auto;
     overflow: hidden;
 
@@ -31,7 +31,7 @@ main {
                 padding: 80px;
                 
                 p{
-                    word-break: break-all;
+                    word-break: nowrap;
                     white-space: normal;
                 }
             }
@@ -72,7 +72,7 @@ main {
     }
 
     .info-cell {
-        height: calc(100vh - 54px);
+        height: calc(100vh - 70px);
         text-align: center;
         padding: 6%;
         

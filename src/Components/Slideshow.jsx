@@ -2,18 +2,28 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const slides = [{
                     "color": "#36AE7C", 
-                    "title": "Nuestro proyecto", 
-                    "text": "El turismo es una actividad económica de gran relevancia en México. Las áreas naturales protegidas son áreas resguardadas para la conservación de su biodiversidad, en las que recientemente se ha buscado implementar estrategias que permitan aprovecharalas turísticamentede una forma sustentable..."
+                    "title": "Normativa del CONACYT...", 
+                    "text": "Este proyecto desarrollado bajo la normatividad de CONACYT, dependiente de la convocatoria de ciencia de frontera es desarrollado por la Universidad Autónoma de San Luis Potosí, la Universidad Nacional Autónoma de México, y el Instituto Politécnico Nacional."
                 }, 
                 {
                     "color": "#F9D923", 
-                    "title": "Lenguaje natural", 
-                    "text": "El procesamiento de lenguaje natural es el campo dentro de las ciencias de la computación que conjunta técnicas de inteligencia artificial con linguística y que, entre otras aplicaciones, permite analizar textos de forma automática"
+                    "title": "Nuestro objetivo...", 
+                    "text": "El objetivo principal del proyecto es proponer un modelo de inteligencia territorial como instrument de gestion turística en Áreas Naturales Protegidas (ANP) de México, que permita crear alternativas de diversificación de manera sustentable."
                 }, 
                 {
                     "color": "#EB5353", 
-                    "title": "CIC - IPN", 
-                    "text": "El laboratorio de Procesamiento Inteligente de Información Geospacial fue el encargado de la elaboración de este proyecto en el plazo de Agosto 2022 a Diciembre 2022."
+                    "title": "Sistema de información geografica...", 
+                    "text": "Este sitio representa el Sistema de Información Geográfica en el que se muestran mapas de las ANP estudiadas durante el Desarrollo del proyecto, así como los atributos turísticos que las component."
+                },
+                {
+                    "color": "#187498", 
+                    "title": "Información sobre el inventario turistico...", 
+                    "text": "En el sitio también se cuenta con información sobre el inventario turístico de las ANP estudiadas, en el que se mencionan lso recursos y atractivos turísticos existentes, información sobre planes de manejo de área y datos recabados en las actividades de campo realizadas en cada ANP."
+                },
+                {
+                    "color": "#FFAD60", 
+                    "title": "Plan de desarrollo nacional...", 
+                    "text": "El proyecto sigue la premisa del plan de Desarrollo Nacional de 2019 en el que se considera la importancia del desarrollo económico del país, considerando que la actividad turística en México es una de las actividades económicas de mayor demanda."
                 }]
             
 const delay = 3500;
