@@ -1,6 +1,5 @@
 @import './style.scss';
 
-
 .custom-bg-color {
     background-color: var(--primary-color);
 }
@@ -14,11 +13,21 @@
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(119deg) brightness(103%) contrast(105%);
 }
 
-.font-brand{
+.brand-font{
     font-family: 'Poppins', sans-serif;
 }
+.navbar-nav {
+    margin: 0 5% 0 5%;
+    .nav-item {
+        font-size: 20px;
+    }
+    .navbar-brand{
+        margin: 0 20px 0 20px;
+    }
+} 
 
-.navbar .navbar-nav .nav-item {
-    font-size: 20px;
+.center-elems {
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
-

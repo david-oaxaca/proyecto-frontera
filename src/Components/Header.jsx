@@ -24,17 +24,17 @@ export default function Header() {
     }, []);
 
     return (
-        <header className='sticky-top'>
+        <header className="sticky-top">
             <nav className="navbar navbar-expand-lg navbar-dark custom-bg-color nav-shadow">
-                <div className="container-fluid">
-                    <a className="navbar-brand font-brand"  href="https://www.ipn.mx/">
-                        <img src={IPN} alt="IPN" className='filter-white' width='70px' height='70px'/>
-                    </a>
+                <div className="container-fluid ">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav mx-auto">
+                    <div className="collapse navbar-collapse text-center justify-content-center" id="navbarNav">
+                        <a className="navbar-brand"  href="https://www.ipn.mx/">
+                            <img src={IPN} alt="IPN" className='filter-white' width='70px' height='70px'/>
+                        </a>
+                        <ul className="navbar-nav">
                             <li className="nav-item">
                                 <a className={`nav-link ${value === 'Home' ? "active" : ''}`} onClick={(e, value) => setValue(value)} href="/">Inicio</a>
                             </li>
@@ -51,10 +51,10 @@ export default function Header() {
                                 <a className={`nav-link ${value === 'Subir Foto' ? "active" : ''}`} onClick={(e, value) => setValue(value)} href="/SubirFoto">Subir Foto</a>
                             </li>
                         </ul>
+                        <a className="navbar-brand"  href="https://www.cic.ipn.mx/">
+                            <img src={CIC} alt="IPN" width='70px' height='70px'/>
+                        </a>
                     </div>
-                    <a className="navbar-brand font-brand"  href="https://www.cic.ipn.mx/">
-                        <img src={CIC} alt="IPN" width='70px' height='70px'/>
-                    </a>
                 </div>
             </nav>
         </header>

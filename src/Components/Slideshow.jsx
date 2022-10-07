@@ -1,6 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const slides = [{
+const slides = [
+                {
+                    "color": "#F6D186", 
+                    "title": "Proyecto de Ciencia de Frontera", 
+                    "text":  "“Modelo de geointeligencia territorial como instrumento de gestion turística en áreas naturales protegidas de México”"
+                },
+                {
                     "color": "#36AE7C", 
                     "title": "Normativa del CONACYT...", 
                     "text": "Este proyecto desarrollado bajo la normatividad de CONACYT, dependiente de la convocatoria de ciencia de frontera es desarrollado por la Universidad Autónoma de San Luis Potosí, la Universidad Nacional Autónoma de México, y el Instituto Politécnico Nacional."
@@ -54,6 +60,18 @@ const Slideshow = () => {
 
     return (
         <div className='slideshow'>
+            <div className='carousel-control left-control' 
+                onClick={() => {
+                    setIndex(
+                        index === 0 ? slides.length-1 : index-1
+                    );
+                }}
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5zM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5z"/>
+                </svg>
+            </div>
+
             <div className='slider'
                 style={{transform: `translate3d(${-index * 100}%, 0, 0)`}}
             >
@@ -69,6 +87,18 @@ const Slideshow = () => {
                         </div>
                     </div>
                 ))}
+            </div>
+
+            <div className='carousel-control right-control'
+                onClick={() => {
+                    setIndex(
+                        index === slides.length-1 ? 0 : index+1
+                    );
+                }}
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"/>
+                </svg>
             </div>
 
             <div className='dots'>

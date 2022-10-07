@@ -11,24 +11,24 @@ main {
 }
 
 .slideshow {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 95px);
     margin: 0 auto;
     overflow: hidden;
 
-    .slider{
+    .slider {
         white-space: nowrap;
         transition: ease 1000ms;
         color: white;
         
-        .slide{
-            height: calc(100vh - 54px);
+        .slide {
+            height: calc(100vh - 95px);
             width: 100%;
             display: inline-block;
             vertical-align:top;
 
             .slide-content {
                 width: 70%;
-                padding: 80px;
+                padding: 100px;
                 
                 p{
                     word-break: nowrap;
@@ -38,7 +38,36 @@ main {
         }
     }
 
-    .dots{
+    .carousel-control {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .carousel-control:hover {
+        background-color: black;
+        opacity:0.2;
+    }
+
+    .left-control {
+        position: absolute;
+        height: 100%;
+        width: 4%;
+        top: 0;
+    }
+
+    .right-control {
+        position: absolute;
+        text-align: right;
+        height: 100%;
+        width: 4%;
+        top: 0;
+        right: 0;
+    }
+
+    .dots {
         position: relative;
         top: -100px;
         text-align: center;
@@ -58,9 +87,9 @@ main {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 5fr 3fr;
+    grid-template-columns: 1fr;
     margin: 0 auto;
-    background-color: var(--secondary-color);
+    background-color: var(--white);
     gap: 10px;
 
     h1, h2 {
@@ -68,21 +97,22 @@ main {
     }
 
     h3, h4, h5 {
-        color: var(--secondary-color);
+        color: #413F42;
     }
 
-    .info-cell {
-        height: calc(100vh - 70px);
+    .info-display {
+        min-height: calc(100vh - 95px);
+        max-height: auto;
         text-align: center;
-        padding: 6%;
+        padding: 3% 7% 3% 7%;
         
         h1, p {
-            color: white;
+            color: var(--primary-color);
         }
     }
 
-    .rating-cell {
-        height: calc(100vh - 54px);
+    .rating-display {
+        height: calc(100vh - 95px);
         display: flex;
         flex-direction: column;
         justify-content: center;
