@@ -1,6 +1,6 @@
 import React from 'react'
 import InfoCard from './InfoCard'
-import Investigador from "../Assets/Images/investigador.jpg";
+import Investigador from "../../Assets/Images/investigador.jpg";
 
 const cards = [
     {
@@ -46,4 +46,4 @@ const CardDisplay = () => {
   )
 }
 
-export default CardDisplay
+export default CardDisplay;

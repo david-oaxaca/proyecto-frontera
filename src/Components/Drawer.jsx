@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Drawer() {
+const Drawer = () => {
   return (
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
@@ -26,3 +26,5 @@ export default function Drawer() {
     </div>
   )
 }
+
+export default Drawer;

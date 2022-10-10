@@ -1,5 +1,5 @@
 import React from "react";
-import '../Assets/Styles/infocard.scss'
+import '../../Assets/Styles/infocard.scss'
 
 const InfoCard = (props) => {
     return(

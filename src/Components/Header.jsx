@@ -3,7 +3,7 @@ import IPN from '../Assets/Icons/ipn_logo.svg';
 import CIC from '../Assets/Images/cic.png';
 import '../Assets/Styles/header.scss';
 
-export default function Header() {
+const Header = () => {
     const [value, setValue] = useState();
     useEffect(() => {
         let pathPure = window.location.pathname;
@@ -39,9 +39,6 @@ export default function Header() {
                                 <a className={`nav-link ${value === 'Home' ? "active" : ''}`} onClick={(e, value) => setValue(value)} href="/">Inicio</a>
                             </li>
                             <li className="nav-item">
-                                <a className={`nav-link ${value === 'Analisis' ? "active" : ''}`} onClick={(e, value) => setValue(value)} href="/Analisis">Analisis</a>
-                            </li>
-                            <li className="nav-item">
                                 <a className={`nav-link ${value === 'Galeria' ? "active" : ''}`} onClick={(e, value) => setValue(value)} href="/Galeria">Galeria</a>
                             </li>
                             <li className="nav-item">
@@ -61,3 +58,5 @@ export default function Header() {
         
     )
 }
+
+export default Header;

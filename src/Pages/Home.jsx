@@ -1,6 +1,6 @@
 import React from 'react';
 import Slideshow from '../Components/Slideshow';
-import CardDisplay from '../Components/CardDisplay';
+import CardDisplay from '../Components/InfoDisplay/CardDisplay';
 import '../Assets/Styles/homepage.scss'
 
 export default function Home() {

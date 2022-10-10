@@ -1,7 +1,10 @@
 import React from 'react'
+import '../Assets/Styles/style.scss';
 
 export default function Analisis() {
   return (
-    <div>Analisis</div>
+    <div className='main-bg'>
+
+    </div>
   )
 }

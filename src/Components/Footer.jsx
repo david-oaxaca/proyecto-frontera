@@ -1,12 +1,13 @@
+import React from 'react';
 import CONACYT from '../Assets/Images/Footer/CONACYT_logo.png';
 import IPN from '../Assets/Images/Footer/IPN_logo.png';
 import UASLP from '../Assets/Images/Footer/UASLP_logo.png';
 import UNAM from '../Assets/Images/Footer/UNAM_logo.png';
 import '../Assets/Styles/footer.scss';
 
-export default function Footer() {
+const Footer = () => {
     return (
-        <div className='footer-wrapper'>
+        <footer className='footer-wrapper'>
             <div>
                 <p><strong>Instituto Politecnico Nacional</strong></p>
                 <p><strong>DIRECCI&Oacute;N: Av. Juan de Dios B&aacute;tiz, esq. Miguel Oth&oacute;n de Mendiz&aacute;bal, 
@@ -31,6 +32,8 @@ export default function Footer() {
                     </a>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
+
+export default Footer;
