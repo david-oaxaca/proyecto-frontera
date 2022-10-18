@@ -1,0 +1,40 @@
+@import './style.scss';
+
+.option-selection {
+    min-width: 80vw;
+    padding: 2% 5% 5% 5%;
+    border-radius: 20px;
+    background-color: var(--white);
+    color: var(--primary-color);
+    
+    a:-webkit-any-link {
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+
+    .selection-title{
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .option-button {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        width: 100%;
+
+        margin: 10px;
+        padding: 20px;
+        
+        font-size: 20px;
+
+        border: 1px solid var(--primary-color);
+        border-radius: 15px;
+    }
+
+    .option-button:hover {
+        background-color: var(--primary-color);
+        color: var(--white);
+        cursor: pointer;
+    }
+}

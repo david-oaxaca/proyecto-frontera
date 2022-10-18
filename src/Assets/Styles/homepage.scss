@@ -11,42 +11,72 @@ main {
 }
 
 .slideshow {
-    height: 32rem;
+    height: calc(100vh - 95px);
     margin: 0 auto;
     overflow: hidden;
 
-    .slider{
+    .slider {
         white-space: nowrap;
         transition: ease 1000ms;
         color: white;
         
-        .slide{
+        .slide {
+            height: calc(100vh - 95px);
+            width: 100%;
             display: inline-block;
             vertical-align:top;
-            height: 32rem;
-            width: 100%;
 
             .slide-content {
                 width: 70%;
-                padding: 80px;
+                padding: 100px;
                 
                 p{
-                    word-break: break-all;
+                    word-break: nowrap;
                     white-space: normal;
+                    font-size: 22px;
                 }
             }
         }
     }
 
-    .dots{
-        text-align: center;
+    .carousel-control {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .carousel-control:hover {
+        background-color: black;
+        opacity:0.2;
+    }
+
+    .left-control {
+        position: absolute;
+        height: 100%;
+        width: 4%;
+        top: 0;
+    }
+
+    .right-control {
+        position: absolute;
+        text-align: right;
+        height: 100%;
+        width: 4%;
+        top: 0;
+        right: 0;
+    }
+
+    .dots {
         position: relative;
         top: -100px;
-
+        text-align: center;
+        
         .slideshowDot {
-            display: inline-block;
             height: 20px;
             width: 20px;
+            display: inline-block;
             border-radius: 50%;
             cursor: pointer;
             margin: 15px 7px 0px;
@@ -58,8 +88,9 @@ main {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 5fr 3fr;
-    background-color: var(--secondary-color);
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    background-color: var(--white);
     gap: 10px;
 
     h1, h2 {
@@ -67,26 +98,27 @@ main {
     }
 
     h3, h4, h5 {
-        color: var(--secondary-color);
+        color: #413F42;
     }
 
-    .info-cell {
-        height: 32rem;
-        padding: 6%;
+    .info-display {
+        min-height: calc(100vh - 95px);
+        max-height: auto;
         text-align: center;
-
+        padding: 3% 7% 3% 7%;
+        
         h1, p {
-            color: white;
+            color: var(--primary-color);
         }
     }
 
-    .rating-cell {
-        padding: 8%;
+    .rating-display {
+        height: calc(100vh - 95px);
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        height: 32rem;
+        padding: 8%;
         background-color: var(--white);
         border-radius: 50% 0 0 50%;
     }

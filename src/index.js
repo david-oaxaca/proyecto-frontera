@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './Assets/Styles/index.css';
+import './Assets/Styles/index.scss';
 import App from './Routes/App';
 import '../src/Assets/Styles/style.scss';
 import 'bootstrap-icons/font/bootstrap-icons.css';

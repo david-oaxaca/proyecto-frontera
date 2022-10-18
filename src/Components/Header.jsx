@@ -1,50 +1,36 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import IPN from '../Assets/Icons/ipn_logo.svg';
+import CIC from '../Assets/Images/cic.png';
 import '../Assets/Styles/header.scss';
 
-export default function Header() {
-    const [value, setValue] = useState();
-    useEffect(() => {
-        let pathPure = window.location.pathname;
-        let path = pathPure.substring(1, pathPure.length);
-        if (path === "") {
-            setValue("Home")
-        } else if (path === "Galeria") {
-            setValue("Galeria");
-        } else if (path === "Analisis") {
-            setValue("Analisis");
-        } else if (path === "Rutas") {
-            setValue("Rutas");
-        }
-    }, []);
+const Header = () => {
 
     return (
-        <header className='sticky-top'>
+        <header className="sticky-top">
             <nav className="navbar navbar-expand-lg navbar-dark custom-bg-color nav-shadow">
-                <div className="container-fluid">
-                    <a className="navbar-brand font-brand"  href="/">
-                        
-                        <img src={IPN} alt="IPN" className='filter-white' width='35px' height='35px'/>
-                        Proyecto Frontera
-                    </a>
+                <div className="container-fluid ">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
+                    <div className="collapse navbar-collapse text-center justify-content-center" id="navbarNav">
+                        <a className="navbar-brand"  href="https://www.ipn.mx/">
+                            <img src={IPN} alt="IPN" className='filter-white' width='70px' height='70px'/>
+                        </a>
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className={`nav-link ${value === 'Home' ? "active" : ''}`} onClick={(e, value) => setValue(value)} href="/">Inicio</a>
+                                <NavLink className={"nav-link"}  to="/">Inicio</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className={`nav-link ${value === 'Analisis' ? "active" : ''}`} onClick={(e, value) => setValue(value)} href="/Analisis">Analisis</a>
+                                <NavLink className={"nav-link"}  to="/Explorar">Explorar</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className={`nav-link ${value === 'Galeria' ? "active" : ''}`} onClick={(e, value) => setValue(value)} href="/Galeria">Galeria</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className={`nav-link ${value === 'Rutas' ? "active" : ''}`} onClick={(e, value) => setValue(value)} href="/Rutas">Rutas</a>
+                                <NavLink className={"nav-link"} to="/SubirFoto">Subir Foto</NavLink>
                             </li>
                         </ul>
+                        <a className="navbar-brand"  href="https://www.cic.ipn.mx/">
+                            <img src={CIC} alt="IPN" width='70px' height='70px'/>
+                        </a>
                     </div>
                 </div>
             </nav>
@@ -52,3 +38,5 @@ export default function Header() {
         
     )
 }
+
+export default Header;
