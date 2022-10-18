@@ -3,7 +3,7 @@ import React from 'react';
 const AboutInfo = () => {
     return(
         <div className='info-display'>
-            <h3>Durante el desarrollo del proyecto se trabajaron tres áreas naturales protegidas:</h3>
+            <h2>Durante el desarrollo del proyecto se trabajaron tres áreas naturales protegidas:</h2>
             <div>
                 <ul>
                     <li>

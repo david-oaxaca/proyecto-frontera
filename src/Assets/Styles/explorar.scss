@@ -1,6 +1,6 @@
 @import './style.scss';
 
-.search-section {
+.select-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,8 +24,12 @@
 }
 
 .info-display {
-    h3 {
+    h2 {
         margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 20px;
     }
 }
     

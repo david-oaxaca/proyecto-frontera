@@ -1,27 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import IPN from '../Assets/Icons/ipn_logo.svg';
 import CIC from '../Assets/Images/cic.png';
 import '../Assets/Styles/header.scss';
 
 const Header = () => {
-    const [value, setValue] = useState();
-    useEffect(() => {
-        let pathPure = window.location.pathname;
-        let path = pathPure.substring(1, pathPure.length);
-        if (path === "") {
-            setValue("Home")
-        } else if (path === "Galeria") {
-            setValue("Galeria");
-        } else if (path === "Analisis") {
-            setValue("Analisis");
-        } else if (path === "Rutas") {
-            setValue("Rutas");
-        } else if (path === "Documentos") {
-            setValue("Documentos");
-        } else if (path === "SubirFoto") {
-            setValue("Subir Foto");
-        }
-    }, []);
 
     return (
         <header className="sticky-top">
@@ -36,16 +19,13 @@ const Header = () => {
                         </a>
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className={`nav-link ${value === 'Home' ? "active" : ''}`} onClick={(e, value) => setValue(value)} href="/">Inicio</a>
+                                <NavLink className={"nav-link"}  to="/">Inicio</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className={`nav-link ${value === 'Galeria' ? "active" : ''}`} onClick={(e, value) => setValue(value)} href="/Galeria">Galeria</a>
+                                <NavLink className={"nav-link"}  to="/Explorar">Explorar</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className={`nav-link ${value === 'Documentos' ? "active" : ''}`} onClick={(e, value) => setValue(value)} href="/Documentos">Documentos</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className={`nav-link ${value === 'Subir Foto' ? "active" : ''}`} onClick={(e, value) => setValue(value)} href="/SubirFoto">Subir Foto</a>
+                                <NavLink className={"nav-link"} to="/SubirFoto">Subir Foto</NavLink>
                             </li>
                         </ul>
                         <a className="navbar-brand"  href="https://www.cic.ipn.mx/">

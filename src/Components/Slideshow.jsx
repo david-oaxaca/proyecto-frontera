@@ -79,7 +79,9 @@ const Slideshow = () => {
                     <div 
                         className='slide' 
                         key={index} 
-                        style={{backgroundColor: `${slideObject.color}`}}
+                        style={{
+                            backgroundColor: `${slideObject.color}`
+                        }}
                     >
                         <div className='slide-content'>
                             <h1>{slideObject.title}</h1>
