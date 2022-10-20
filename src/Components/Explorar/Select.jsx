@@ -10,7 +10,7 @@ const Select = (props) => {
     return(
         <div className='select-wrapper'>
             <select onChange={e => props.handleChange(e.target.value)} class="form-select form-select-lg mb-3">
-                {data.map((object) => (
+                {data.map((object, key) => (
                     <option value={object.name} >{object.name}</option>
                 ))}
             </select>

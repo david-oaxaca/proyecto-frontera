@@ -40,6 +40,8 @@ main {
     }
 
     .carousel-control {
+        height: 100%;
+        width: 4%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -49,21 +51,17 @@ main {
 
     .carousel-control:hover {
         background-color: black;
-        opacity:0.2;
+        opacity:0.7;
     }
 
     .left-control {
         position: absolute;
-        height: 100%;
-        width: 4%;
         top: 0;
     }
 
     .right-control {
         position: absolute;
         text-align: right;
-        height: 100%;
-        width: 4%;
         top: 0;
         right: 0;
     }
@@ -111,19 +109,63 @@ main {
             color: var(--primary-color);
         }
     }
+}
 
-    .rating-display {
-        height: calc(100vh - 95px);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding: 8%;
-        background-color: var(--white);
-        border-radius: 50% 0 0 50%;
-    }
+@media (max-width: 1000px) {
+    .slideshow {
+        .slider {
+            .slide {
+                .slide-content {
+                    width: 80%;
+                    padding: 80px;
 
-    .rating-btn {
-        padding: 10px;
+                    h1 {
+                        word-break: nowrap;
+                        white-space: normal;
+                    }
+                    
+                    p{
+                        word-break: nowrap;
+                        white-space: normal;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    
+        .carousel-control {
+            width: 35px;
+        }
+    
     }
+}
+
+@media (max-width: 500px) {
+    .slideshow {
+        .slider {
+            .slide {
+                .slide-content {
+                    width: 100%;
+                    padding: 30px;
+
+                    h1 {
+                        word-break: nowrap;
+                        white-space: normal;
+                    }
+                    
+                    p{
+                        word-break: nowrap;
+                        white-space: normal;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    
+        .carousel-control {
+            width: 25px;
+        }
+    
+    }
+    
 }

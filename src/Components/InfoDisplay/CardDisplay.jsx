@@ -1,5 +1,6 @@
 import React from 'react'
 import InfoCard from './InfoCard'
+import '../../Assets/Styles/infocard.scss';
 import Investigador from "../../Assets/Images/investigador.jpg";
 
 const cards = [
@@ -33,10 +34,10 @@ const cards = [
 const CardDisplay = () => {
   return (
     <div className='container d-flex justify-content-center align-items-top'>
-        <div className='row'>
+        <div className='card-grid'>
             {
                 cards.map(card => (
-                    <div className="col-md-3" key={card.id}>
+                    <div className="col-size" key={card.id}>
                         <InfoCard title={card.name} directory={card.directory} imageSource={card.imageSource}/>    
                     </div>
                 ))
