@@ -5,7 +5,7 @@ const slides = [
                     "color": "#F6D186", 
                     "image_url": "https://drive.google.com/uc?export=view&id=1o_A9QtuLBIQG0WE9Hl_n2RRYBkL7yPkx",
                     "title": "Proyecto de Ciencia de Frontera", 
-                    "text":  "“Modelo de geointeligencia territorial como instrumento de gestion turística en áreas naturales protegidas de México”"
+                    "text":  "Modelo de geointeligencia territorial como instrumento de gestion turística en áreas naturales protegidas de México"
                 },
                 {
                     "color": "#36AE7C", 

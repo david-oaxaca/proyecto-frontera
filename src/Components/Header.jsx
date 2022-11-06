@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import IPN from '../Assets/Icons/ipn_logo.svg';
-import CIC from '../Assets/Images/cic.png';
+import CONACYT from '../Assets/Icons/conacyt_logo.svg';
+import UNAM from '../Assets/Icons/unam_logo.svg';
+import UASLP from '../Assets/Icons/uaslp_logo.svg';
 import '../Assets/Styles/header.scss';
 
 const Header = () => {
@@ -27,9 +29,13 @@ const Header = () => {
                         
                         
                         <div className="collapse navbar-collapse text-center justify-content-center" id="navbarNav">
-                            <a className="navbar-brand"  href="https://www.ipn.mx/">
-                                <img src={IPN} alt="IPN" className='filter-white' width='70px' height='70px'/>
+                            <a className="navbar-brand"  href="https://www.conacyt.mx/">
+                                <img src={CONACYT} alt="CONACYT" className='filter-white' width='auto' height='70px'/>
                             </a>
+                            <a className="navbar-brand"  href="https://www.ipn.mx/">
+                                <img src={IPN} alt="IPN" className='filter-white' width='auto' height='70px'/>
+                            </a>
+                            
                             <ul className="navbar-nav">
                                 <li className="nav-item">
                                     <NavLink className={"nav-link"}  to="/">Inicio</NavLink>
@@ -44,8 +50,12 @@ const Header = () => {
                                     <NavLink className={"nav-link"} to="/SubirDocumento">Subir Documento</NavLink>
                                 </li>
                             </ul>
-                            <a className="navbar-brand"  href="https://www.cic.ipn.mx/">
-                                <img src={CIC} alt="IPN" width='70px' height='70px'/>
+                            
+                            <a className="navbar-brand"  href="https://www.unam.mx/">
+                                <img src={UNAM} alt="UNAM" className='filter-white' width='auto' height='70px'/>
+                            </a>
+                            <a className="navbar-brand"  href="https://www.uaslp.mx/">
+                                <img src={UASLP} alt="UASLP" className='filter-white' width='auto' height='70px'/>
                             </a>
                         </div>
                     </div>
