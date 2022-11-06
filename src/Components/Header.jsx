@@ -40,6 +40,9 @@ const Header = () => {
                                 <li className="nav-item">
                                     <NavLink className={"nav-link"} to="/SubirFoto">Subir Foto</NavLink>
                                 </li>
+                                <li className="nav-item">
+                                    <NavLink className={"nav-link"} to="/SubirDocumento">Subir Documento</NavLink>
+                                </li>
                             </ul>
                             <a className="navbar-brand"  href="https://www.cic.ipn.mx/">
                                 <img src={CIC} alt="IPN" width='70px' height='70px'/>
@@ -53,6 +56,7 @@ const Header = () => {
                     <NavLink className={"nav-link drawer-option"} onClick={showSidebar} to="/">Inicio</NavLink>
                     <NavLink className={"nav-link drawer-option"} onClick={showSidebar} to="/Explorar">Explorar</NavLink>
                     <NavLink className={"nav-link drawer-option"} onClick={showSidebar} to="/SubirFoto">Subir Foto</NavLink>
+                    <NavLink className={"nav-link drawer-option"} onClick={showSidebar} to="/SubirDocumento">Subir Documento</NavLink>
                 </div>
             </div>
         </>
