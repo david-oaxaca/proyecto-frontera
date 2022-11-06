@@ -4,7 +4,7 @@ import '../Assets/Styles/style.scss';
 
 export default function SubirFoto() {
   return (
-    <div className='main-bg'>
+    <div className='main-bg-center'>
       <Formulario/>
     </div>
   )
