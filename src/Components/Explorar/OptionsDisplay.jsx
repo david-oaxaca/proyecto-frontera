@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../Assets/Styles/options.scss';
 import SvgComponent from './svgComponent';
 import MostrarGaleria from './MostrarGaleria';
 
 const OptionsDisplay = (props) => {
-    
+    const [displayGalery, setDisplayGalery] = useState(false);
+
+    const showGalery = () => {
+        setDisplayGalery(!displayGalery);
+    }
+
     return(
         <div className='galery-selection'>
             <div className='selection-title'>
@@ -28,15 +33,14 @@ const OptionsDisplay = (props) => {
             <div className='galery-option' onClick={() => props.handleType("Datos encuesta")}>
                 Datos encuesta
                 <SvgComponent />
-                
+   
             </div>
-            <div  className='galery-option' onClick={() => props.handleType("Galeria")}>
+            <div  className='galery-option' onClick={() => showGalery()}>
                 Galeria
                 <SvgComponent />
-                {/*{ showing5 
-                    ? <MostrarGaleria destino = {this.props.location}/>
-                    : null
-                }*/}
+                {  
+                    displayGalery && <MostrarGaleria destino = {props.location}/>
+                }
             </div>
         </div>
         

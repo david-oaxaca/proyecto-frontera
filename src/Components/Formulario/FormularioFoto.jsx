@@ -9,10 +9,10 @@ import {
 
 
 import '../../Assets/Styles/formulario.scss';
-
+/* eslint-disable */
 let foto = null;
 let zona = null;
-
+/* eslint-enable */
 const Formulario = () => {
 	const [formularioEnviado, setFormularioEnviado] = useState(false);
 	const [imageUpload, setImageUpload] = useState(null);
