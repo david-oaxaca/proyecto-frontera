@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Formik, Form, Field, ErrorMessage} from 'formik';
+import {Formik, Form, Field} from 'formik';
 import {
 	ref,
 	uploadBytes
@@ -10,17 +10,16 @@ import {
 
 import '../../Assets/Styles/formulario.scss';
 
-let foto = null;
 let zona = null;
 
 const Formulario = () => {
 	const [formularioEnviado] = useState(false);
-	const [imageUpload, setImageUpload] = useState(null);
+	const [DocUpload, setDocUpload] = useState(null);
 
 	const uploadFile = () => {
-		if (imageUpload == null) return;
-		const imageRef = ref(storage, `Imagenes_${zona}/${imageUpload.name + v4()}`);
-		uploadBytes(imageRef, imageUpload);
+		if (DocUpload == null) return;
+		const imageRef = ref(storage, `Documentos_${zona}/${DocUpload.name + v4()}`);
+		uploadBytes(imageRef, DocUpload);
 	};
 
 	return (
@@ -69,8 +68,8 @@ const Formulario = () => {
 							accept=".pdf"
 							onChange = { async (e) => {handleChange(e)
 								console.log(e.target.files[0]);
-								setImageUpload(e.target.files[0]);
-								foto =  e.target.files[0]
+								setDocUpload(e.target.files[0]);
+				
 								}
 							}
 						/>
