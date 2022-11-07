@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Select from '../Components/Explorar/Select';
 import OptionsDisplay from '../Components/Explorar/OptionsDisplay';
 import AboutInfo from '../Components/Explorar/AboutInfo';
+import DocDisplay from '../Components/Documentos/DocDisplay';
 import '../Assets/Styles/explorar.scss';
 
 let searchOptions = [
@@ -21,14 +22,26 @@ let searchOptions = [
 
 export default function Explorar() {
   const [option, setOption] = useState('Selecciona una reserva');
+  const [type, setType] = useState('');
+  const [display, setDisplay] = useState(1);
 
   useEffect(() => {
     console.log(option)
   });
 
+  function showDisplay(){
+    setDisplay(-1 * display);
+  }
+
   const handleChange = (opt) => {
       setOption(opt);
   }
+
+  const handleType = (type) => {
+    setType(type);
+  }
+
+
 
   return (
     <main className='main-bg'>
@@ -41,8 +54,11 @@ export default function Explorar() {
           (option === 'Selecciona una reserva') && <AboutInfo/>
         }
         {
-          (option !== 'Selecciona una reserva') && <OptionsDisplay location={option}/>
+          (option !== 'Selecciona una reserva') && <OptionsDisplay handleType={handleType}  location={option}/>
         }
+      </section>
+      <section>
+        <DocDisplay location={option} type={type}/>
       </section>
       
     </main>
