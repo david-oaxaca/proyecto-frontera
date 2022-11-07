@@ -10,7 +10,7 @@ let searchOptions = [
                         'name': 'Selecciona una reserva'
                       },
                       {
-                        'name': 'Reserva de la Biosfera Tehuacán-Cuicatlón'
+                        'name': 'Reserva de la Biosfera Tehuacán-Cuicatlán'
                       },
                       {
                         'name': 'Reserva Ecológica Cuxtal'
@@ -23,18 +23,14 @@ let searchOptions = [
 export default function Explorar() {
   const [option, setOption] = useState('Selecciona una reserva');
   const [type, setType] = useState('');
-  const [display, setDisplay] = useState(1);
 
   useEffect(() => {
     console.log(option)
   });
 
-  function showDisplay(){
-    setDisplay(-1 * display);
-  }
-
   const handleChange = (opt) => {
       setOption(opt);
+      setType('');
   }
 
   const handleType = (type) => {
@@ -53,13 +49,18 @@ export default function Explorar() {
         {
           (option === 'Selecciona una reserva') && <AboutInfo/>
         }
+      </section>
+      <section className='display-section'>
         {
-          (option !== 'Selecciona una reserva') && <OptionsDisplay handleType={handleType}  location={option}/>
+          (option !== 'Selecciona una reserva' && (type === 'Galeria' || type === '') ) && <OptionsDisplay handleType={handleType} location={option}/>
         }
       </section>
-      <section>
-        <DocDisplay location={option} type={type}/>
+      <section className='viewer-section'>
+        {
+          (option !== 'Selecciona una reserva' && type !== '' && type !== 'Galeria') && <DocDisplay handleType={handleType}  location={option} type={type}/>
+        }
       </section>
+      
       
     </main>
   )

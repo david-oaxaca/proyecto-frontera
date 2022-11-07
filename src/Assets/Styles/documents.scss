@@ -4,20 +4,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90vw;
+    width: 80vw;
     height: auto;
     padding: 30px;
-    margin: 30px;
+    margin: 10px;
     border-radius: 20px;
     background-color: white;
     color: var(--primary-color);
 
-    .doc-option {
-        display: grid;
-        grid-template-columns: 4fr 1fr;
+    .pdf-display {
         width: 100%;
-        margin: 25px;
+        height: 90vh;
+        margin-bottom: 30px;
+        background-color: #e4e4e4;
+        overflow-y: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .doc-option {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        text-align: center;
         padding: 20px;
+        margin: 25px;
         font-size: 20px;
         border: 1px solid var(--primary-color);
         border-radius: 15px;

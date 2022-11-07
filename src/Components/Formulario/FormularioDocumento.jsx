@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import {Formik, Form, Field, ErrorMessage} from 'formik';
+import {Formik, Form, Field} from 'formik';
 import {
 	ref,
 	uploadBytes
   } from "firebase/storage";
-  import { storage } from "./firebase";
+  import { storage } from "../firebase";
   import { v4 } from "uuid";
 
 
@@ -12,14 +12,15 @@ import '../../Assets/Styles/formulario.scss';
 
 let foto = null;
 let zona = null;
+let tipo = null;
 
 const Formulario = () => {
-	const [formularioEnviado] = useState(false);
+	const [formularioEnviado, setFormularioEnviado] = useState(false);
 	const [imageUpload, setImageUpload] = useState(null);
 
 	const uploadFile = () => {
 		if (imageUpload == null) return;
-		const imageRef = ref(storage, `Imagenes_${zona}/${imageUpload.name + v4()}`);
+		const imageRef = ref(storage, `Documentos_${zona}/${tipo}/${imageUpload.name + v4()}`);
 		uploadBytes(imageRef, imageUpload);
 	};
 
@@ -30,6 +31,7 @@ const Formulario = () => {
 		<Formik 
 		    initialValues={{
 				categoria:"",
+				tipo:"",
 				file: ""
 			}}
 
@@ -43,11 +45,14 @@ const Formulario = () => {
 			}}
 			onSubmit = { async (valores, {resetForm}) => {
 				resetForm();
+				console.log(valores);
 				zona = valores.categoria;
+				tipo = valores.tipo;
+				setFormularioEnviado(true);
 				uploadFile();
 			}}
 		>
-			{({errors,setFieldValue,valores,handleChange}) => (
+			{({handleChange}) => (
 				<Form className="formulario">
 					<div className='formulatio-title'>
                         <h1>Sube un Documento!</h1>
@@ -55,11 +60,18 @@ const Formulario = () => {
 
 					<div>
 						<label htmlFor="zona">Zona</label>
-						<Field name = "categoria" className="categoria" as="select">
+						<Field name="categoria" className="categoria" as="select">
 							<option value="">Selecciona una Zona</option>
-							<option value="Reserva de la Biosfera Tehuacán-Cuicatlón">Tehuacán - Cuicatlán</option>
+							<option value="Reserva de la Biosfera Tehuacán-Cuicatlán">Tehuacán - Cuicatlán</option>
 							<option value="Reserva Ecológica Cuxtal">Reserva Ecológica Cuxtal</option>
 							<option value="Reserva de la Biosfera Sierra Gorda">Sierra Gorda</option>
+						</Field>
+						<label htmlFor="tipo">Tipo</label>
+						<Field name="tipo" className="categoria" as="select">
+							<option value="">Selecciona una tipo de documento</option>
+							<option value="Documentos oficiales del ANP">Documentos oficiales del ANP</option>
+							<option value="Mapa de inventario turistico">Mapa de inventario turistico</option>
+							<option value="Mapa de rutas turisticas">Mapa de rutas turisticas</option>
 						</Field>
 						<label htmlFor="file">File</label>
 						<Field

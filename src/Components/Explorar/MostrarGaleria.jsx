@@ -11,7 +11,7 @@ import {
   getDownloadURL,
   listAll,
 } from "firebase/storage";
-import { storage } from "./firebase";
+import { storage } from "../firebase";
 import "./buscador.css";
 
 function Buscador(props) {

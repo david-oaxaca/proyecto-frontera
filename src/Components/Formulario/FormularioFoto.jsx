@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import {Formik, Form, Field, ErrorMessage} from 'formik';
+import {Formik, Form, Field} from 'formik';
 import {
 	ref,
 	uploadBytes
   } from "firebase/storage";
-  import { storage } from "./firebase";
+  import { storage } from "../firebase";
   import { v4 } from "uuid";
 
 
@@ -14,7 +14,7 @@ let foto = null;
 let zona = null;
 
 const Formulario = () => {
-	const [formularioEnviado] = useState(false);
+	const [formularioEnviado, setFormularioEnviado] = useState(false);
 	const [imageUpload, setImageUpload] = useState(null);
 
 	const uploadFile = () => {
@@ -44,6 +44,7 @@ const Formulario = () => {
 			onSubmit = { async (valores, {resetForm}) => {
 				resetForm();
 				zona = valores.categoria;
+				setFormularioEnviado(true);
 				uploadFile();
 			}}
 		>

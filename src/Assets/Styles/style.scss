@@ -24,6 +24,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    overflow: hidden;
     min-height: calc(100vh - 95px);
     background-color: var(--secondary-color);
 }
@@ -33,6 +34,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
     min-height: calc(100vh - 95px);
     background-color: var(--secondary-color);
 }
