@@ -27,7 +27,7 @@ function Gallery(props) {
 		<>
 			<div className = "gallery">
 				{imageUrls && 
-				imageUrls.slice(0, imageUrls.length/2).map((imageZone)=>{
+				imageUrls.slice(0, imageUrls.length).map((imageZone)=>{
 
 					return(
 						<div className='pics'>
