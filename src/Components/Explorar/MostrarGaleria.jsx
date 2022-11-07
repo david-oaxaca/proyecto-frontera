@@ -7,7 +7,7 @@ import {
   listAll,
 } from "firebase/storage";
 import { storage } from "../firebase";
-import '../../Assets/Styles/gallery.scss';
+import './gallery.css';
 
 function Gallery(props) {
 	const [imageUrls, setImageUrls] = useState([]);
