@@ -40,7 +40,7 @@ const DocDisplay = (props) => {
             <h1>{location}</h1>
             <h2>{type}</h2>
             {/* show pdf conditionally (if we have one)  */}
-            {pdfsUrls && pdfsUrls.slice(0, pdfsUrls.length/2).map((docZone)=>(
+            {pdfsUrls && pdfsUrls.slice(0, pdfsUrls.length).map((docZone)=>(
                 <div className='pdf-display'>
                     <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.15.349/build/pdf.worker.min.js" >
                         <Viewer 
