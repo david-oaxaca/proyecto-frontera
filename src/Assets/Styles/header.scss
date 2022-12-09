@@ -1,88 +1,89 @@
-@import './style.scss';
+@import "./style.scss";
 
 .custom-bg-color {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .nav-shadow {
-    z-index: 3;
-    box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.20);
+  z-index: 3;
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .filter-white {
-    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(119deg) brightness(103%) contrast(105%);
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(119deg)
+    brightness(103%) contrast(105%);
 }
 
-.brand-font{
-    font-family: 'Poppins', sans-serif;
+.brand-font {
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar-nav {
-    margin: 0 5% 0 5%;
-    .nav-item {
-        font-size: 25px;
-    }
-    .navbar-brand{
-        margin: 0 10px 0 10px;
-    }
-} 
+  margin: 0 5% 0 5%;
+  .nav-item {
+    font-size: 25px;
+  }
+  .navbar-brand {
+    margin: 0 10px 0 10px;
+  }
+}
 
 .center-elems {
-    display: flex;
-    text-align: center;
-    align-items: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 
 .collapsed-navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .drawer-title {
-    display: none;
-    margin-left: 20px;
-    color: white;
+  display: none;
+  margin-left: 20px;
+  color: white;
 }
 
 .drawer-container {
-    display: flex;
-    justify-content: flex-start;
-    position: fixed;
-    top: 90px;
-    height: calc(100% - 90px);
-    width: 45%;
-    z-index: 3;
-    background-color: var(--primary-color);
-    transition: ease 1000ms;
+  display: flex;
+  justify-content: flex-start;
+  position: fixed;
+  top: 90px;
+  height: calc(100% - 90px);
+  width: auto;
+  padding: 20px;
+  z-index: 3;
+  background-color: var(--primary-color);
+  transition: ease 1000ms;
 
-    .drawer-content {
-        padding: 10%;
-        font-family: 'Poppins', sans-serif;
-        font-size: 25px;
-        
-        .drawer-option {
-            color: #c4c4c4;
-        }
-        
-        .drawer-option:hover {
-            color: white;
-        }
+  .drawer-content {
+    padding: 10%;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+
+    .drawer-option {
+      color: #c4c4c4;
+      margin-bottom: 20%;
     }
 
-    .drawer-initial-position {
-        left: -100%;
+    .drawer-option:hover {
+      color: white;
     }
+  }
+
+  .drawer-initial-position {
+    left: -100%;
+  }
 }
 
-
-
 @media (max-width: 1000px) {
-    .navbar {
-        height: 100px !important; 
-    }
-    
-    .drawer-title {
-        display: block;
-    }
+  .navbar {
+    height: 100px !important;
+  }
+
+  .drawer-title {
+    display: block;
+  }
 }
