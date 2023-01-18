@@ -1,27 +1,10 @@
 import React from "react";
 import { Chart } from "react-chartjs-2";
-import {
-  Chart as ChartJS,
-  ArcElement,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  PointElement,
-  LineElement,
-} from "chart.js";
+import { Chart as ChartJS } from "chart.js/auto"; // eslint-disable-line no-unused-vars
 import "../../Assets/Styles/estadisticas.scss";
 
 const ChartComponent = (props) => {
   // We register components needed to plot the chart (Necessary since Chart.js v3)
-  ChartJS.register(
-    ArcElement,
-    CategoryScale,
-    LinearScale,
-    BarElement,
-    PointElement,
-    LineElement
-  );
-
   return (
     <div className="chart">
       <h3>{props.title}</h3>
