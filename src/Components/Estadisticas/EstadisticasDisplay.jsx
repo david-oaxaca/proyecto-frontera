@@ -43,15 +43,15 @@ const EstadisticasDisplay = () => {
           </div>
         </div>
         <div className="chart-container">
-          {questionSelected !== "" &&
-          questionSelected !== "Selecciona una pregunta" &&
+          {questionSelected - 1!== "" &&
+          questionSelected - 1!== "Selecciona una pregunta" &&
           chartSelected !== "" &&
           chartSelected !== "Selecciona un tipo de grafica" ? (
             <ChartComponent
-              title={chartData[questionSelected]["title"]}
-              description={chartData[questionSelected]["description"]}
+              title={chartData[questionSelected - 1]["title"]}
+              description={chartData[questionSelected - 1]["description"]}
               type={chartSelected}
-              data={chartData[questionSelected]["data"]}
+              data={chartData[questionSelected - 1]["data"]}
             />
           ) : (
             <Instrucciones />
