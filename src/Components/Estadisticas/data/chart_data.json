@@ -1,0 +1,686 @@
+[
+  {
+    "title": "Cuxtal - Edad de los visitantes",
+    "description": "Grafica mostrando la distribución de edad de las personas que visitaron la reserva de Cuxtal",
+    "data": {
+      "labels": ["De 20 a 40 años", "De 40 a 60 años", "Menos de 20 años"],
+      "datasets": [
+        {
+          "data": [16, 8, 6],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)"
+          ],
+
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Sexo de los visitantes",
+    "description": "Grafica mostrando la distribución de sexo de las personas que visitaron la reserva de Cuxtal",
+    "data": {
+      "labels": ["Masculino", "Femenino"],
+      "datasets": [
+        {
+          "data": [16, 13],
+          "backgroundColor": ["rgb(255, 99, 132)", "rgb(54, 162, 235)"],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Lugar de procedencia",
+    "description": "Grafica mostrando lugar de procedencia de las personas que visitaron la reserva de Cuxtal",
+    "data": {
+      "labels": [
+        "Veracruz",
+        "Ciudad de Mexico",
+        "Puebla",
+        "Yucatan",
+        "Oaxaca",
+        "Tabasco",
+        "Colima",
+        "Michoacan",
+        "Aguascalientes",
+        "Morelos",
+        "Estado de Mexico",
+        "Guanajuato",
+        "Nayarit"
+      ],
+      "datasets": [
+        {
+          "data": [1, 8, 3, 1, 1, 1, 3, 1, 1, 5, 3, 1, 1],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(255, 99, 132)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Motivación para venir al ANP",
+    "description": "Grafica mostrando la motivación de las personas que visitaron la reserva de Cuxtal",
+    "data": {
+      "labels": [
+        "El paisaje",
+        "La cercanía",
+        "Ampliar el conocimiento sobre la naturaleza",
+        "El costo accesible",
+        "Interés por la cultura local",
+        "Las actividades al aire libre y contacto con la naturaleza"
+      ],
+      "datasets": [
+        {
+          "data": [17, 4, 2, 4, 1, 2],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(204, 169, 221)",
+            "rgb(189, 236, 182)",
+            "rgb(255, 99, 132)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Hospedaje",
+    "description": "Grafica mostrando donde se hospedan las personas que visitaron la reserva de Cuxtal",
+    "data": {
+      "labels": [
+        "Hotel, posada u hostal",
+        "Vivienda de familiar o amigo",
+        "Vivienda propia",
+        "Ninguna, estoy de paso",
+        "Renta de casa o departamento"
+      ],
+      "datasets": [
+        {
+          "data": [19, 5, 2, 2, 2],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(204, 169, 221)",
+            "rgb(189, 236, 182)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - ¿Cómo se entero del sitio?",
+    "description": "Grafica mostrando como se enteraron del sitio las personas que visitaron la reserva de Cuxtal",
+    "data": {
+      "labels": [
+        "Redes sociales",
+        "Publicidad en TV o Radio",
+        "Agencias de viajes",
+        "Revistas"
+      ],
+      "datasets": [
+        {
+          "data": [21, 3, 3, 3],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(204, 169, 221)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Numero de visitas",
+    "description": "Grafica mostrando cuantas veces visitaron el sitio las personas que fueron a la reserva de Cuxtal",
+    "data": {
+      "labels": ["0 veces", "1 vez", "2 veces"],
+      "datasets": [
+        {
+          "data": [9, 14, 7],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Medio de transporte",
+    "description": "Grafica mostrando el medio de transporte usado por las personas que fueron a la reserva de Cuxtal",
+    "data": {
+      "labels": [
+        "Automóvil particular",
+        "Transporte público",
+        "Vehículo de un tour",
+        "Otro"
+      ],
+      "datasets": [
+        {
+          "data": [18, 9, 2, 1],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(204, 169, 221)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Duración de la visita",
+    "description": "Grafica mostrando la duración de la visita las personas que fueron a la reserva de Cuxtal",
+    "data": {
+      "labels": ["De 2 a 4 horas", "De 1 a 2 horas", "Menos de 1 hora"],
+      "datasets": [
+        {
+          "data": [20, 8, 2],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Costo de la visita",
+    "description": "Grafica mostrando la cantidad de dinero gastado por las personas que fueron a la reserva de Cuxtal",
+    "data": {
+      "labels": [
+        "Entro $501 y $1000 pesos",
+        "Entre $1001 y $2000 pesos",
+        "Entre $100 y $500 pesos",
+        "Más de $2000 pesos"
+      ],
+      "datasets": [
+        {
+          "data": [12, 5, 10, 3],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(204, 169, 221)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Dificultad para llegar al sitio",
+    "description": "Grafica mostrando la dificultad para llegar al sitio por las personas que fueron a la reserva de Cuxtal",
+    "data": {
+      "labels": ["Regular", "Muy complicado", "Poco"],
+      "datasets": [
+        {
+          "data": [14, 10, 6],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Accesibilidad",
+    "description": "Del ANP, ¿cómo califica los aspectos de accesibilidad?",
+    "data": {
+      "labels": ["Malo", "Regular", "Bueno"],
+      "datasets": [
+        {
+          "data": [12, 12, 6],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Instalaciones",
+    "description": "Del ANP, ¿cómo califica el aspecto de las instalaciones?",
+    "data": {
+      "labels": ["Malo", "Regular", "Bueno"],
+      "datasets": [
+        {
+          "data": [17, 10, 3],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Costo de acceso",
+    "description": "Del ANP, ¿cómo califica el aspecto de costo de acceso?",
+    "data": {
+      "labels": ["Malo", "Regular", "Bueno"],
+      "datasets": [
+        {
+          "data": [13, 16, 1],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Sanitarios",
+    "description": "Del ANP, ¿cómo califica el aspecto de los sanitarios?",
+    "data": {
+      "labels": ["Malo", "Regular", "Bueno"],
+      "datasets": [
+        {
+          "data": [12, 9, 9],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Precio de alimentos",
+    "description": "Grafica de preferencia de selección de alimentos por precio. 0 = nada importante 1 = Poco importante 2 = Regular 3 = Importante 4 = Muy importante.",
+    "data": {
+      "labels": ["0", "1", "2", "3", "4"],
+      "datasets": [
+        {
+          "data": [1, 5, 8, 5, 10],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(204, 169, 221)",
+            "rgb(189, 236, 182)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Sabor de alimentos",
+    "description": "Grafica de preferencia de selección de alimentos por sabor. 0 = nada importante 1 = Poco importante 2 = Regular 3 = Importante 4 = Muy importante.",
+    "data": {
+      "labels": ["0", "1", "2", "3", "4"],
+      "datasets": [
+        {
+          "data": [0, 3, 11, 3, 13],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(204, 169, 221)",
+            "rgb(189, 236, 182)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Facilidad para el consumo de alimentos",
+    "description": "Grafica de preferencia de selección de alimentos por facilidad para el consumo. 0 = nada importante 1 = Poco importante 2 = Regular 3 = Importante 4 = Muy importante.",
+    "data": {
+      "labels": ["0", "1", "2", "3", "4"],
+      "datasets": [
+        {
+          "data": [2, 5, 12, 6, 5],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(204, 169, 221)",
+            "rgb(189, 236, 182)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Medidas de higiene en alimentos",
+    "description": "Grafica de preferencia de selección de alimentos por medidas de higiene. 0 = nada importante 1 = Poco importante 2 = Regular 3 = Importante 4 = Muy importante.",
+    "data": {
+      "labels": ["0", "1", "2", "3", "4"],
+      "datasets": [
+        {
+          "data": [0, 1, 12, 4, 13],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(204, 169, 221)",
+            "rgb(189, 236, 182)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Selección de alimentos por recetas locales",
+    "description": "Grafica de preferencia de selección de alimentos por recetas locales. 0 = nada importante 1 = Poco importante 2 = Regular 3 = Importante 4 = Muy importante.",
+    "data": {
+      "labels": ["0", "1", "2", "3", "4"],
+      "datasets": [
+        {
+          "data": [0, 2, 12, 6, 9],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(204, 169, 221)",
+            "rgb(189, 236, 182)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Preferencia en alimentos",
+    "description": "Grafica de preferencia de tipos de alimentos.",
+    "data": {
+      "labels": [
+        "Alimentos propios del lugar",
+        "Alimentos propios del lugar, Comida rápida",
+        "Alimentos propios del lugar, Comida rápida, Snacks y bocadillos",
+        "Alimentos propios del lugar, Snacks y bocadillos",
+        "Comida rápida, Snacks y bocadillos"
+      ],
+      "datasets": [
+        {
+          "data": [9, 6, 5, 7, 3],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(204, 169, 221)",
+            "rgb(189, 236, 182)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Preferencias en precios de alimentos",
+    "description": "Grafica de preferencias de precio para comida por persona",
+    "data": {
+      "labels": [
+        "Entre $100 y $250 pesos (5 a 12 dólares)",
+        "Entre $250 y $450 pesos (12 a 22 dólares)",
+        "Más de $500 pesos (25 dólares)",
+        "Menos de $100 pesos (5 dólares)"
+      ],
+      "datasets": [
+        {
+          "data": [17, 9, 1, 3],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(204, 169, 221)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Preferencias de recursos observados",
+    "description": "Grafica de preferencias de recursos observados.",
+    "data": {
+      "labels": [
+        "Cuerpos de agua",
+        "Estilo de vida de la población",
+        "Fauna",
+        "Flora",
+        "Manifestaciones culturales",
+        "Paisaje"
+      ],
+      "datasets": [
+        {
+          "data": [4, 1, 3, 9, 1, 12],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(204, 169, 221)",
+            "rgb(189, 236, 182)",
+            "rgb(255, 174, 105)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Sensaciones producidas por recursos",
+    "description": "Grafica de sensaciones producidas en el ANP.",
+    "data": {
+      "labels": [
+        "Alegria",
+        "Desolación",
+        "Energía",
+        "Tranquilidad",
+        "Unión con la naturaleza"
+      ],
+      "datasets": [
+        {
+          "data": [1, 2, 7, 7, 13],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(204, 169, 221)",
+            "rgb(189, 236, 182)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Percepción general de posibles peligros",
+    "description": "Grafica de posibles peligros para los turistas.",
+    "data": {
+      "labels": [
+        "Acantilados",
+        "Animales",
+        "Cuerpos de agua",
+        "Ninguno",
+        "Plantas"
+      ],
+      "datasets": [
+        {
+          "data": [3, 6, 5, 11, 5],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(204, 169, 221)",
+            "rgb(189, 236, 182)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Percepción general de principales ventajas",
+    "description": "Grafica de las principales ventajas del ANP.",
+    "data": {
+      "labels": [
+        "Actividades recreativas",
+        "Contacto con la naturaleza",
+        "Fácil acceso",
+        "Servicios básicos (sanitarios, comedor)"
+      ],
+      "datasets": [
+        {
+          "data": [4, 14, 9, 3],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(204, 169, 221)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Percepción general de principales desventajas",
+    "description": "Grafica de las principales desventajas del ANP.",
+    "data": {
+      "labels": [
+        "Difícil acceso",
+        "Falta de actividades recreativas o mala calidad de ellas",
+        "Falta de servicios o mala calidad de ellos (sanitarios, comedor)",
+        "Instalaciones con mal aspecto"
+      ],
+      "datasets": [
+        {
+          "data": [10, 9, 5, 6],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(204, 169, 221)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Percepción general de cantidad de turistas",
+    "description": "Grafica de cantidad de turistas.",
+    "data": {
+      "labels": ["Escaso", "Regular", "Abundante", "Demasiado"],
+      "datasets": [
+        {
+          "data": [16, 7, 5, 2],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(204, 169, 221)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Percepción general de turistas que regresarian",
+    "description": "Grafica de turistas que regresarian a el ANP.",
+    "data": {
+      "labels": ["Sí", "No"],
+      "datasets": [
+        {
+          "data": [29, 1],
+          "backgroundColor": ["rgb(255, 99, 132)", "rgb(54, 162, 235)"],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Percepción general de turistas que lo recomendarian",
+    "description": "Grafica de turistas que recomendarian el ANP.",
+    "data": {
+      "labels": ["Sí", "No"],
+      "datasets": [
+        {
+          "data": [30, 0],
+          "backgroundColor": ["rgb(255, 99, 132)", "rgb(54, 162, 235)"],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Tehuacan-Cuicatlan - Edad de los visitantes",
+    "description": "Grafica mostrando la distribución de edad de las personas que visitaron la reserva de Tehuacan-Cuicatlan",
+    "data": {
+      "labels": ["De 20 a 40 años", "De 40 a 60 años", "Menos de 20 años"],
+      "datasets": [
+        {
+          "data": [5, 0, 0],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Tehuacan-Cuicatlan - Sexo de los visitantes",
+    "description": "Grafica mostrando la distribución de sexo de las personas que visitaron la reserva de Tehuacan-Cuicatlan",
+    "data": {
+      "labels": ["Masculino", "Femenino"],
+      "datasets": [
+        {
+          "data": [5, 0],
+          "backgroundColor": ["rgb(255, 99, 132)", "rgb(54, 162, 235)"],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  }
+]
