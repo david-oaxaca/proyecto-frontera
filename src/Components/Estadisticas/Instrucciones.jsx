@@ -8,14 +8,9 @@ const Instrucciones = () => {
       <ol type="1">
         <li>
           <p>
-            Selecci&oacute;na la reserva de la cual quieres consultar datos y
-            presiona en "Seleccionar reserva".
-          </p>
-        </li>
-        <li>
-          <p>
-            Selecci&oacute;na la pregunta que deseas consultar de acuerdo a la
-            reserva previamente seleccionada.
+            Selecci&oacute;na la pregunta que deseas consultar. Si m&aacute;s
+            adelante deseas consultar una pregunta distinta, seleccionara y la
+            grafica cambiara para mostrar los datos.
           </p>
         </li>
         <li>
@@ -27,8 +22,9 @@ const Instrucciones = () => {
         </li>
         <li>
           <p>
-            Si deseas consultar los datos de una reserva distinta, presiona en
-            "Seleccionar otra reserva" para realizar el proceso nuevamente.
+            Una vez que hayas seleccionado ambos parametros, se desplegara la
+            grafica, esta cambiara de forma dinamica conforme cambies los
+            parametros seleccionados.
           </p>
         </li>
       </ol>

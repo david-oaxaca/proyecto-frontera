@@ -24,8 +24,7 @@ const ChartComponent = (props) => {
 
   return (
     <div className="chart">
-      <h3>{props.area}</h3>
-      <h4>{props.title}</h4>
+      <h3>{props.title}</h3>
       <p>{props.description}</p>
       <Chart
         type={props.type}
