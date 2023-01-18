@@ -1,14 +1,105 @@
-{
-  "labels": ["Red", "Blue", "Yellow"],
-  "datasets": [
-    {
-      "data": [300, 50, 100],
-      "backgroundColor": [
-        "rgb(255, 99, 132)",
-        "rgb(54, 162, 235)",
-        "rgb(255, 205, 86)"
-      ],
-      "hoverOffset": 4
+[
+  {
+    "title": "Cuxtal - Edad de los visitantes",
+    "description": "Grafica mostrando la distribución de edad de las personas que visitaron la reserva de Cuxtal",
+    "data": {
+      "labels": ["De 20 a 40 años", "De 40 a 60 años", "Menos de 20 años"],
+      "datasets": [
+        {
+          "data": [16, 8, 6],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)"
+          ],
+
+          "hoverOffset": 4
+        }
+      ]
     }
-  ]
-}
+  },
+  {
+    "title": "Tehuacan-Cuicatlan - Edad",
+    "data": {
+      "labels": ["De 20 a 40 años", "De 40 a 60 años", "Menos de 20 años"],
+      "datasets": [
+        {
+          "data": [5, 0, 0],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Sexo",
+    "data": {
+      "labels": ["Masculino", "Femenino"],
+      "datasets": [
+        {
+          "data": [16, 13],
+          "backgroundColor": ["rgb(255, 99, 132)", "rgb(54, 162, 235)"],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Tehuacan-Cuicatlan - Sexo",
+    "data": {
+      "labels": ["Masculino", "Femenino"],
+      "datasets": [
+        {
+          "data": [5, 0],
+          "backgroundColor": ["rgb(255, 99, 132)", "rgb(54, 162, 235)"],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "Cuxtal - Lugar de procedencia",
+    "data": {
+      "labels": [
+        "Veracruz",
+        "Ciudad de Mexico",
+        "Puebla",
+        "Yucatan",
+        "Oaxaca",
+        "Tabasco",
+        "Colima",
+        "Michoacan",
+        "Aguascalientes",
+        "Morelos",
+        "Estado de Mexico",
+        "Guanajuato",
+        "Nayarit"
+      ],
+      "datasets": [
+        {
+          "data": [1, 8, 3, 1, 1, 1, 3, 1, 1, 5, 3, 1, 1],
+          "backgroundColor": [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+            "rgb(255, 99, 132)"
+          ],
+          "hoverOffset": 4
+        }
+      ]
+    }
+  }
+]

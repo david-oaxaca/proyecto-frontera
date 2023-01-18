@@ -109,10 +109,10 @@ const EstadisticasDisplay = () => {
           chartSelected !== "Selecciona un tipo de grafica" ? (
             <ChartComponent
               area={areaSelected}
-              title={"Titulo"}
-              description={"Descripcion"}
+              title={chartData[0]["title"]}
+              description={chartData[0]["description"]}
               type={chartSelected}
-              data={chartData}
+              data={chartData[0]["data"]}
             />
           ) : (
             <Instrucciones />
