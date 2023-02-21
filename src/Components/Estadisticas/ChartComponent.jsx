@@ -4,7 +4,7 @@ import { Chart as ChartJS } from "chart.js/auto"; // eslint-disable-line no-unus
 import "../../Assets/Styles/estadisticas.scss";
 
 const ChartComponent = (props) => {
-  // We register components needed to plot the chart (Necessary since Chart.js v3)
+  const showLegend = !(props.type === "bar" || props.type === "line");
   return (
     <div className="chart">
       <h3>{props.title}</h3>
@@ -16,9 +16,10 @@ const ChartComponent = (props) => {
           title: {
             display: false,
           },
-          legend: {
-            display: true,
-            position: "right",
+          plugins: {
+            legend: {
+              display: showLegend,
+            },
           },
         }}
       />

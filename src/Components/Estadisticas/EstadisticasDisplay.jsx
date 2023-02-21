@@ -6,7 +6,10 @@ import chartsTypes from "./data/chart_types.json";
 import chartData from "./data/chart_data.json";
 import questionsData from "./data/questions.json";
 
+let areas = ["Selecciona una reserva", "Reserva Ecológica Cuxtal"];
+
 const EstadisticasDisplay = () => {
+  const [areaSelected, setAreaSelected] = useState("");
   const [questionSelected, setQuestionSelected] = useState("");
   const [chartSelected, setChartSelected] = useState("");
 
@@ -17,41 +20,63 @@ const EstadisticasDisplay = () => {
       </div>
       <div className="container-content">
         <div className="options-container">
-          <div className="options">
-            <p className="section-label">Selecciona la pregunta a graficar:</p>
-            <select
-              onChange={(e) => setQuestionSelected(e.target.value)}
-              className="form-select form-select-lg mb-3"
-            >
-              {questionsData.map((text, id) => (
-                <option value={id} key={id}>
-                  {text}
-                </option>
-              ))}
-            </select>
-            <p className="section-label">Selecciona el tipo de grafica:</p>
-            <select
-              onChange={(e) => setChartSelected(e.target.value)}
-              className="form-select form-select-lg mb-3"
-            >
-              {chartsTypes.map((text, id) => (
-                <option value={text} key={id}>
-                  {text}
-                </option>
-              ))}
-            </select>
-          </div>
+          {areaSelected === "" || areaSelected === "Selecciona una reserva" ? (
+            <div className="options">
+              <p className="section-label">
+                Selecciona la reserva de la cual quieres ver graficas:
+              </p>
+              <select
+                onChange={(e) => setAreaSelected(e.target.value)}
+                className="form-select form-select-lg mb-3"
+              >
+                {areas.map((text, id) => (
+                  <option value={id} key={id}>
+                    {text}
+                  </option>
+                ))}
+              </select>
+            </div>
+          ) : (
+            <div className="options">
+              <p className="section-label">
+                Selecciona la pregunta a graficar:
+              </p>
+              <select
+                onChange={(e) => setQuestionSelected(e.target.value)}
+                className="form-select form-select-lg mb-3"
+              >
+                {questionsData.map((text, id) => (
+                  <option value={id} key={id}>
+                    {text}
+                  </option>
+                ))}
+              </select>
+              <p className="section-label">Selecciona el tipo de grafica:</p>
+              <select
+                onChange={(e) => setChartSelected(e.target.value)}
+                className="form-select form-select-lg mb-3"
+              >
+                {chartsTypes.map((text, id) => (
+                  <option value={text} key={id}>
+                    {text}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
         </div>
         <div className="chart-container">
-          {questionSelected !== "" &&
+          {areaSelected !== "" &&
+          areaSelected !== "Selecciona una reserva" &&
+          questionSelected !== "" &&
           questionSelected !== "Selecciona una pregunta" &&
           chartSelected !== "" &&
           chartSelected !== "Selecciona un tipo de grafica" ? (
             <ChartComponent
-              title={chartData[questionSelected]["title"]}
-              description={chartData[questionSelected]["description"]}
+              title={chartData[questionSelected - 1]["title"]}
+              description={chartData[questionSelected - 1]["description"]}
               type={chartSelected}
-              data={chartData[questionSelected]["data"]}
+              data={chartData[questionSelected - 1]["data"]}
             />
           ) : (
             <Instrucciones />
