@@ -7,6 +7,7 @@ const ChartComponent = (props) => {
   const showLegend = !(props.type === "bar" || props.type === "line");
   return (
     <div className="chart">
+      <h2>{props.area}</h2>
       <h3>{props.title}</h3>
       <p>{props.description}</p>
       <Chart
