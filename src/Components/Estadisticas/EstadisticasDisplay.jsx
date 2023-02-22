@@ -19,6 +19,12 @@ const EstadisticasDisplay = () => {
   const [questionSelected, setQuestionSelected] = useState(0);
   const [chartSelected, setChartSelected] = useState(0);
 
+  const handleSelectArea = () => {
+    setAreaSelected(0);
+    setQuestionSelected(0);
+    setChartSelected(0);
+  };
+
   return (
     <div className="section-container">
       <div className="container-title">
@@ -57,7 +63,11 @@ const EstadisticasDisplay = () => {
                 ))}
               </select>
               <div className="btn-container">
-                <button type="button" className="btn chart-btn">
+                <button
+                  type="button"
+                  onClick={handleSelectArea}
+                  className="btn chart-btn"
+                >
                   Seleccionar otra reserva
                 </button>
               </div>
