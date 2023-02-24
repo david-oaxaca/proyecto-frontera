@@ -3,8 +3,6 @@ import axios from "axios";
 import Instrucciones from "./Instrucciones";
 import ChartComponent from "./ChartComponent";
 import "../../Assets/Styles/estadisticas.scss";
-//import chartData from "./data/chart_data.json";
-//import questionsData from "./data/questions.json";
 
 let areas = ["Selecciona una reserva", "Reserva Ecológica Cuxtal"];
 let chartTypes = [
@@ -34,10 +32,8 @@ const EstadisticasDisplay = () => {
     axios
       .get(endpoints[areaSelected - 1])
       .then((response) => {
-        console.log(response);
         setChartData(response["data"]);
         let questions = response["data"].map((obj) => obj.title);
-        console.log(questions);
         setQuestionsData((currentArray) => [...currentArray, ...questions]);
         setRequestPerformed(true);
       })
