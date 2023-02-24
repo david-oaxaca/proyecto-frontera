@@ -2,7 +2,7 @@ import React from "react";
 import "../../Assets/Styles/select.scss";
 /**
  *
- * THIS IS A CUSTOM SELECT FOR THE PROJECT
+ * THIS IS A CUSTOM SELECT FOR THE EXPLORE MODULE
  *
  **/
 const Select = (props) => {
