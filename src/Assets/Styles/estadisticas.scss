@@ -34,25 +34,6 @@
       .options {
         width: 100%;
       }
-
-      .btn-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-
-        .chart-btn {
-          padding: 15px;
-          background-color: var(--primary-color);
-          color: var(--white);
-          margin: 10px;
-        }
-        .chart-btn:hover {
-          background-color: var(--primary-color);
-          color: var(--white);
-          cursor: pointer;
-        }
-      }
     }
 
     .section-label {
@@ -75,33 +56,23 @@
       }
     }
   }
-}
 
-@media (max-width: 1000px) {
-  .section-container {
-    margin: 25px;
-    .container-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
-      .options-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 10px;
-        border-right: none;
-      }
-
-      .chart-container {
-        width: 90%;
-        padding: 10px;
-        text-align: justify;
-      }
+    .chart-btn {
+      padding: 15px;
+      background-color: var(--primary-color);
+      color: var(--white);
+      margin: 10px;
+    }
+    .chart-btn:hover {
+      background-color: var(--primary-color);
+      color: var(--white);
+      cursor: pointer;
     }
   }
 }
@@ -134,5 +105,34 @@
 
   li {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section-container {
+    margin: 25px;
+    .container-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .options-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        border-right: none;
+      }
+
+      .chart-container {
+        width: 90%;
+        padding: 10px;
+        text-align: justify;
+      }
+    }
   }
 }
