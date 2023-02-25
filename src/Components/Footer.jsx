@@ -43,7 +43,7 @@ const Footer = () => {
           Modelo de geointeligencia territorial como instrumento de gestion
           turística en áreas naturales protegidas de México
         </p>
-        <p>&Uacute;ltima Actualizaci&oacute;n: 08/12/2022</p>
+        <p>&Uacute;ltima Actualizaci&oacute;n: 24/02/2022</p>
         <p>Made with ❤ at Instituto Politecnico Nacional</p>
       </div>
     </footer>

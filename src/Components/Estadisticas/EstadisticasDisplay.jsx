@@ -4,7 +4,12 @@ import Instrucciones from "./Instrucciones";
 import ChartComponent from "./ChartComponent";
 import "../../Assets/Styles/estadisticas.scss";
 
-let areas = ["Selecciona una reserva", "Reserva Ecológica Cuxtal"];
+let areaOptions = [
+  "Selecciona una reserva",
+  "Reserva Ecológica Cuxtal",
+  "Reserva de la Biosfera Tehuacán-Cuicatlán",
+  "Reserva de la Biosfera Sierra Gorda",
+];
 let chartTypes = [
   "Selecciona un tipo de grafica",
   "doughnut",
@@ -12,11 +17,23 @@ let chartTypes = [
   "pie",
   "line",
 ];
-let endpoints = [
-  "https://proyectofronteraestadisticas.azurewebsites.net/api/ConsultaCuxtal",
-  "",
-  "",
-];
+let areaQueries = ["Cuxtal", "Tehuacan", "Sierra"];
+
+const MappedSelect = (props) => {
+  return (
+    <select
+      onChange={(e) => props.handleSelection(e.target.value)}
+      value={props.value}
+      className="form-select form-select-lg mb-3"
+    >
+      {props.data.map((text, id) => (
+        <option value={id} key={id}>
+          {text}
+        </option>
+      ))}
+    </select>
+  );
+};
 
 const EstadisticasDisplay = () => {
   const [areaSelected, setAreaSelected] = useState(0);
@@ -30,7 +47,10 @@ const EstadisticasDisplay = () => {
 
   const handleSelectArea = () => {
     axios
-      .get(endpoints[areaSelected - 1])
+      .get(
+        "https://proyectofronteraestadisticas.azurewebsites.net/api/ConsultaEstadisticas",
+        { params: { zona: areaQueries[areaSelected - 1] } }
+      )
       .then((response) => {
         setChartData(response["data"]);
         let questions = response["data"].map((obj) => obj.title);
@@ -63,29 +83,17 @@ const EstadisticasDisplay = () => {
               <p className="section-label">
                 Selecciona la pregunta a graficar:
               </p>
-              <select
-                onChange={(e) => setQuestionSelected(e.target.value)}
+              <MappedSelect
+                data={questionsData}
                 value={questionSelected}
-                className="form-select form-select-lg mb-3"
-              >
-                {questionsData.map((text, id) => (
-                  <option value={id} key={id}>
-                    {text}
-                  </option>
-                ))}
-              </select>
+                handleSelection={setQuestionSelected}
+              />
               <p className="section-label">Selecciona el tipo de grafica:</p>
-              <select
-                onChange={(e) => setChartSelected(e.target.value)}
+              <MappedSelect
+                data={chartTypes}
                 value={chartSelected}
-                className="form-select form-select-lg mb-3"
-              >
-                {chartTypes.map((text, id) => (
-                  <option value={id} key={id}>
-                    {text}
-                  </option>
-                ))}
-              </select>
+                handleSelection={setChartSelected}
+              />
               <div className="btn-container">
                 <button
                   type="button"
@@ -104,17 +112,11 @@ const EstadisticasDisplay = () => {
               <p className="section-label">
                 Selecciona la reserva de la cual quieres ver graficas:
               </p>
-              <select
-                onChange={(e) => setAreaSelected(e.target.value)}
+              <MappedSelect
+                data={areaOptions}
                 value={areaSelected}
-                className="form-select form-select-lg mb-3"
-              >
-                {areas.map((text, id) => (
-                  <option value={id} key={id}>
-                    {text}
-                  </option>
-                ))}
-              </select>
+                handleSelection={setAreaSelected}
+              />
               <div className="btn-container">
                 <button
                   type="button"
@@ -127,7 +129,7 @@ const EstadisticasDisplay = () => {
             </div>
           ) : questionSelected !== 0 && chartSelected !== 0 ? (
             <ChartComponent
-              area={areas[areaSelected]}
+              area={areaOptions[areaSelected]}
               title={chartData[questionSelected - 1]["title"]}
               description={chartData[questionSelected - 1]["description"]}
               type={chartTypes[chartSelected]}

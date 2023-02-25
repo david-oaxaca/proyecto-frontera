@@ -42,15 +42,6 @@ const OptionsDisplay = (props) => {
           <SvgComponent />
         </div>
       </div>
-      <div
-        className="galery-option"
-        onClick={() => props.handleType("Datos encuesta")}
-      >
-        Datos encuesta
-        <div className="svg-container">
-          <SvgComponent />
-        </div>
-      </div>
       <div className="galery-option" onClick={() => showGalery()}>
         Galeria
         <div className="svg-container">
