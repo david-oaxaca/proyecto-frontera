@@ -47,8 +47,13 @@ const OptionsDisplay = (props) => {
         <div className="svg-container">
           <SvgComponent />
         </div>
-        {displayGalery && <MostrarGaleria destino={props.location} />}
       </div>
+      <div style={{maxWidth: "70vw", display: "block",
+  marginLeft: "auto",
+  marginRight: "auto",
+  marginTop: "20px"}}>
+          {displayGalery && <MostrarGaleria destino={props.location} />}
+        </div>
     </div>
   );
 };
