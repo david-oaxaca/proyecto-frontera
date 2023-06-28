@@ -26,14 +26,14 @@ const slides = [
     color: "#EB5353",
     image_url:
       "https://drive.google.com/uc?export=view&id=1o_A9QtuLBIQG0WE9Hl_n2RRYBkL7yPkx",
-    title: "Sistema de información geografica...",
-    text: "Este sitio representa el Sistema de Información Geográfica en el que se muestran mapas de las ANP estudiadas durante el Desarrollo del proyecto, así como los atributos turísticos que las component.",
+    title: "Sistema de información geográfica...",
+    text: "Este sitio representa el Sistema de Información Geográfica en el que se muestran mapas de las ANP estudiadas durante el Desarrollo del proyecto, así como los atributos turísticos que las componen.",
   },
   {
     color: "#187498",
     image_url:
       "https://drive.google.com/uc?export=view&id=1tvabzpMwjruLwaW_n1l0ErBRI_11PZRy",
-    title: "Información sobre el inventario turistico...",
+    title: "Información sobre el inventario turístico...",
     text: "En el sitio también se cuenta con información sobre el inventario turístico de las ANP estudiadas, en el que se mencionan lso recursos y atractivos turísticos existentes, información sobre planes de manejo de área y datos recabados en las actividades de campo realizadas en cada ANP.",
   },
   {
