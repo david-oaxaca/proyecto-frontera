@@ -16,7 +16,7 @@ export default function Home() {
             <p>
               Los investigadores que contribuyeron a la creaci&oacute;n de este
               proyecto, incluyendo la recopilaci&oacute;n de datos, el
-              desarrollo de la aplicaci&oacute; y la pagina web fueron:
+              desarrollo de la aplicaci&oacute; y la p&aacute;gina web fueron:
             </p>
             <CardDisplay />
           </div>

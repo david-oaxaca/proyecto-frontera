@@ -11,7 +11,7 @@ let areaOptions = [
   "Reserva de la Biosfera Sierra Gorda",
 ];
 let chartTypes = [
-  "Selecciona un tipo de grafica",
+  "Selecciona un tipo de gráfica",
   "doughnut",
   "bar",
   "pie",
@@ -72,7 +72,7 @@ const EstadisticasDisplay = () => {
   return (
     <div className="section-container">
       <div className="container-title">
-        <h1>Estadisticas</h1>
+        <h1>Estadísticas</h1>
       </div>
       <div className="container-content">
         <div className="options-container">
@@ -88,7 +88,9 @@ const EstadisticasDisplay = () => {
                 value={questionSelected}
                 handleSelection={setQuestionSelected}
               />
-              <p className="section-label">Selecciona el tipo de grafica:</p>
+              <p className="section-label">
+                Selecciona el tipo de gr&aacute;fica:
+              </p>
               <MappedSelect
                 data={chartTypes}
                 value={chartSelected}
@@ -110,7 +112,7 @@ const EstadisticasDisplay = () => {
           {areaSelected === 0 || !requestPerformed ? (
             <div className="options">
               <p className="section-label">
-                Selecciona la reserva de la cual quieres ver graficas:
+                Selecciona la reserva de la cual quieres ver gráficas:
               </p>
               <MappedSelect
                 data={areaOptions}
@@ -136,7 +138,7 @@ const EstadisticasDisplay = () => {
               data={chartData[questionSelected - 1]["data"]}
             />
           ) : (
-            <h2>Seleccione la pregunta a graficar y el tipo de grafica.</h2>
+            <h2>Seleccione la pregunta a graficar y el tipo de gráfica.</h2>
           )}
         </div>
       </div>

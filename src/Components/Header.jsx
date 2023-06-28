@@ -70,7 +70,7 @@ const Header = () => {
                 </li>
                 <li className="nav-item">
                   <NavLink className={"nav-link"} to="/Estadisticas">
-                    Estadisticas
+                    Estadísticas
                   </NavLink>
                 </li>
                 <li className="nav-item">
